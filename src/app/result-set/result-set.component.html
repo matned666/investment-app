@@ -1,0 +1,28 @@
+<app-frame>
+  @if (actualResultSet.length === 0) {
+    <p>No results yet</p>
+  } @else {
+    <ul class="table">
+      <li class="header">
+        <ul class="row">
+          <li>Year</li>
+          <li>Investment Value</li>
+          <li>Interest (Year)</li>
+          <li>Total Interest</li>
+          <li>Invested Capital</li>
+        </ul>
+      </li>
+      @for (result of actualResultSet; track result.year) {
+        <li>
+          <ul class="row">
+            <li>{{ result.year }}</li>
+            <li>{{ result.valueEndOfYear | currency:'USD':'symbol':'1.2-2' }}</li>
+            <li>{{ result.interest | currency:'USD':'symbol':'1.2-2' }}</li>
+            <li>{{ result.totalInterest | currency:'USD':'symbol':'1.2-2' }}</li>
+            <li>{{ result.totalAmountInvested | currency:'USD':'symbol':'1.2-2' }}</li>
+          </ul>
+        </li>
+      }
+    </ul>
+  }
+</app-frame>

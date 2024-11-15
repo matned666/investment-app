@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #191919;  /* Czarny kolor tła */
+  color: white;             /* Biały kolor tekstu */
+  font-family: Arial, sans-serif; /* Opcjonalnie czcionka */
+  margin: 0;                /* Usuń domyślne marginesy */
+  padding: 0;               /* Usuń domyślne padding */
+}
+
+html {
+  height: 100%; /* Aby upewnić się, że tło obejmuje całą stronę */
+}
+

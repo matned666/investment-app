@@ -1,0 +1,82 @@
+/* Stylowanie głównego kontenera */
+:host {
+  display: block;
+  background-color: #3f633f; /* Zielone tło */
+  color: #b3b59e; /* Lekko zazieleniony tekst */
+  width: 50%; /* 1/2 szerokości ekranu */
+  margin: 0 auto; /* Wyśrodkowanie na stronie */
+  padding: 20px;
+  border-radius: 10px; /* Zaokrąglone rogi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lekki cień */
+}
+
+/* Stylowanie formularza */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Odstęp między sekcjami formularza */
+}
+
+/* Układ wierszy z inputami */
+.input-row {
+  display: flex;
+  gap: 20px; /* Odstęp między grupami inputów */
+}
+
+/* Stylowanie grup inputów */
+.input-group {
+  flex: 1; /* Wszystkie grupy mają równą szerokość */
+  display: flex;
+  flex-direction: column; /* Etykieta nad inputem */
+  gap: 5px; /* Odstęp między etykietą a polem */
+}
+
+/* Stylowanie etykiet */
+label {
+  font-size: 0.8rem; /* Małe litery */
+  text-transform: lowercase; /* Wszystkie litery małe */
+}
+
+/* Stylowanie inputów */
+input {
+  background-color: transparent; /* Przezroczyste tło */
+  color: #b3b59e; /* Kolor tekstu */
+  border: 2px solid #b3b59e; /* Ramka koloru tekstu */
+  border-radius: 5px; /* Zaokrąglone rogi */
+  padding: 10px; /* Wewnętrzny margines */
+  font-size: 1rem; /* Równa wielkość tekstu */
+  width: 100%; /* Input zajmuje całą szerokość grupy */
+  box-sizing: border-box; /* Uwzględnienie paddingu w szerokości */
+}
+
+/* Styl inputów w stanie focus */
+input:focus {
+  outline: none;
+  border-color: #6d954a; /* Jaśniejsza zieleń po zaznaczeniu */
+}
+
+/* Sekcja przycisków */
+.actions {
+  display: flex;
+  justify-content: space-between; /* Równe rozmieszczenie przycisków */
+  gap: 10px; /* Odstęp między przyciskami */
+}
+
+/* Stylowanie przycisków */
+button {
+  background-color: #b3b59e; /* Kolor liter na przycisku */
+  color: #435a2b; /* Kolor tła na literach przycisku */
+  border: none; /* Bez ramki */
+  padding: 10px 20px; /* Wygodne wymiary */
+  font-size: 1rem; /* Rozmiar tekstu */
+  border-radius: 5px; /* Zaokrąglone rogi */
+  cursor: pointer; /* Zmiana kursora na "kliknięcie" */
+  flex: 1; /* Równa szerokość przycisków */
+  text-transform: uppercase; /* Tekst na przyciskach wielkimi literami */
+}
+
+/* Zmiana wyglądu przycisków po najechaniu */
+button:hover {
+  background-color: #6d954a; /* Jaśniejsza zieleń na hover */
+  color: #000; /* Ciemniejszy tekst */
+}

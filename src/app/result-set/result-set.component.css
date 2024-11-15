@@ -1,0 +1,54 @@
+/* General styles for the table */
+.table {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+/* Flexbox layout for rows */
+.row {
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center align in vertical direction */
+  padding: 8px 0;
+}
+
+/* Adjust spacing between columns */
+.row span {
+  flex: 1; /* Distribute space evenly */
+  text-align: center; /* Align text in the center of each column */
+}
+
+/* Add some padding for the container */
+.table li {
+  padding: 5px 0;
+}
+
+/* Responsive design: stack columns on small screens */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    text-align: left; /* Left-align text for better readability */
+  }
+
+  .row span {
+    flex: none; /* Reset flex behavior */
+    margin-bottom: 5px;
+  }
+}

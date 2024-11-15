@@ -1,0 +1,25 @@
+/* Container for the components */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Start stacking from the top */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Optional: spacing around the content */
+  gap: 20px; /* Space between components */
+}
+
+/* Ensure child components are centered and responsive */
+app-header,
+app-calculator,
+app-result-set {
+  width: 100%; /* Take full width */
+  max-width: 800px; /* Limit maximum width for better appearance */
+  text-align: center; /* Center the content inside the components */
+}
+
+/* Optional: Add specific styles for spacing inside app-frame */
+app-frame {
+  display: block;
+  margin: 0 auto; /* Center frame content if needed */
+}
